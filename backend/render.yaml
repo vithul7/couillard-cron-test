@@ -1,0 +1,6 @@
+services:
+  - name: my-cron-job
+    env:
+      - name: CRON_JOB_SCHEDULE
+        value: "every 5m"  # Adjust the schedule as needed
+    start_command: "python3 my_cron_script.py"
